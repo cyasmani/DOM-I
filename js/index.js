@@ -81,5 +81,38 @@ document.querySelector(".contact p:nth-child(4)").textContent = "sales@greatidea
 document.querySelector("footer p").textContent = "Copyright Great Idea! 2018";
 
 
+//style stretch goal
+const funky = document.createElement("button");
+const header1 = document.querySelector("h1");
+const image1 = document.querySelector(".cta-text");
+const datBody = document.querySelector("body");
+header1.addEventListener("mousemove", colorOn);
+image1.appendChild(funky);
+funky.textContent = "Click to get Funky";
+funky.addEventListener("click", colorOff)
+function colorOn(e) {
+  
+  header1.style.color = `rgb(${e.offsetX},${e.offsetY}, 40)`;
+
+}
+
+
+function colorOff(e) {
+  
+  header1.style.color = "black";
+  datBody.addEventListener("mousemove", getFunky)
+}
+
+const getFunky = (e) => {
+  
+  let getColor = document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY}, 40)`
+
+  return getColor;
+
+}
+
+
+
+
 
 
