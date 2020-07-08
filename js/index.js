@@ -50,10 +50,35 @@ document.querySelector("a:nth-child(5)").textContent = "About";
 document.querySelector("a:nth-child(6)").textContent = "Contact";
 
 //Header
-// let linebreaker = document.createElement("BR");
-// let linebreaker2 = document.body.appendChild(linebreaker);
 document.querySelector("h1").innerHTML = "DOM <br> Is <br> Awesome";
+document.querySelector("button").textContent = "Get Started";
+document.querySelector("#cta-img").setAttribute("src", "img/header-img.png");
 
+//Main Content
+document.querySelector("h4").textContent = "Features";
+document.querySelector("p").textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+document.querySelector(".text-content:nth-child(2) h4").textContent = "About";
+document.querySelector(".text-content:nth-child(2) p").textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+document.querySelector("#middle-img").setAttribute("src", "img/mid-page-accent.jpg");
+document.querySelector(".bottom-content .text-content:nth-child(1) h4").textContent = "Services";
+document.querySelector(".bottom-content .text-content:nth-child(1) p").textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+document.querySelector(".bottom-content .text-content:nth-child(2) h4").textContent = "Product";
+document.querySelector(".bottom-content .text-content:nth-child(2) p").textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+document.querySelector(".bottom-content .text-content:nth-child(3) h4").textContent = "Vision";
+document.querySelector(".bottom-content .text-content:nth-child(3) p").textContent = 
+"Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+//Footer
+
+document.querySelector(".contact h4").textContent = "Contact";
+document.querySelector(".contact p").innerHTML = "123 Way 456 Street <br> Somewhere, USA";
+document.querySelector(".contact p:nth-child(3)").textContent= "1 (888) 888-8888";
+document.querySelector(".contact p:nth-child(4)").textContent = "sales@greatidea.io";
+document.querySelector("footer p").textContent = "Copyright Great Idea! 2018";
 
 
 
