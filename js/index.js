@@ -40,3 +40,79 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//NAVBAR
+document.querySelector("a").textContent = "Services";
+document.querySelector("a:nth-child(2)").textContent = "Products";
+document.querySelector("a:nth-child(3)").textContent = "Vision";
+document.querySelector("a:nth-child(4)").textContent = "Features";
+document.querySelector("a:nth-child(5)").textContent = "About";
+document.querySelector("a:nth-child(6)").textContent = "Contact";
+
+//Header
+document.querySelector("h1").innerHTML = "DOM <br> Is <br> Awesome";
+document.querySelector("button").textContent = "Get Started";
+document.querySelector("#cta-img").setAttribute("src", "img/header-img.png");
+
+//Main Content
+document.querySelector("h4").textContent = "Features";
+document.querySelector("p").textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+document.querySelector(".text-content:nth-child(2) h4").textContent = "About";
+document.querySelector(".text-content:nth-child(2) p").textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+document.querySelector("#middle-img").setAttribute("src", "img/mid-page-accent.jpg");
+document.querySelector(".bottom-content .text-content:nth-child(1) h4").textContent = "Services";
+document.querySelector(".bottom-content .text-content:nth-child(1) p").textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+document.querySelector(".bottom-content .text-content:nth-child(2) h4").textContent = "Product";
+document.querySelector(".bottom-content .text-content:nth-child(2) p").textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+document.querySelector(".bottom-content .text-content:nth-child(3) h4").textContent = "Vision";
+document.querySelector(".bottom-content .text-content:nth-child(3) p").textContent = 
+"Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+//Footer
+
+document.querySelector(".contact h4").textContent = "Contact";
+document.querySelector(".contact p").innerHTML = "123 Way 456 Street <br> Somewhere, USA";
+document.querySelector(".contact p:nth-child(3)").textContent= "1 (888) 888-8888";
+document.querySelector(".contact p:nth-child(4)").textContent = "sales@greatidea.io";
+document.querySelector("footer p").textContent = "Copyright Great Idea! 2018";
+
+
+//style stretch goal
+const funky = document.createElement("button");
+const header1 = document.querySelector("h1");
+const image1 = document.querySelector(".cta-text");
+const datBody = document.querySelector("body");
+header1.addEventListener("mousemove", colorOn);
+image1.appendChild(funky);
+funky.textContent = "Click to get Funky";
+funky.addEventListener("click", colorOff)
+function colorOn(e) {
+  
+  header1.style.color = `rgb(${e.offsetX},${e.offsetY}, 40)`;
+
+}
+
+
+function colorOff(e) {
+  
+  header1.style.color = "black";
+  datBody.addEventListener("mousemove", getFunky)
+}
+
+const getFunky = (e) => {
+  
+  let getColor = document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY}, 40)`
+
+  return getColor;
+
+}
+
+
+
+
+
+
